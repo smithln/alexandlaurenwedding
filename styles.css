@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: .05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header--main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
