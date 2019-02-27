@@ -1,7 +1,14 @@
+html {
+  background: #f7f1ec;
+  max-height: 800px;
+  position: fixed;
+  width: 100%;
+}
+
 body {
   font-family: 'crimson text', serif;
   font-size: 16px;
-  color: #2D2D33;
+  color: #282d2a;
   text-align: center;
 }
 
@@ -10,9 +17,14 @@ body {
   margin: 0 auto;
 }
 
+.logo--nav {
+  padding-top: 1em;
+  width: 275px;
+}
+
 header {
   padding: 100px;
-  padding-top: 10em;
+  padding-top: 15%;
 }
 
 span, h1 {
@@ -23,7 +35,7 @@ span, h1 {
 
 h1 {
   font-size: 4em;
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   margin: .3em;
 }
 
@@ -40,4 +52,73 @@ p {
 
 .date {
   padding-top: 3.5em;
+}
+
+.flora {
+  left: 0;
+  height: 740px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.flora--lemon {
+  left: -11%;
+  top: -30%;
+}
+
+.flora--flower {
+  right: -12%;
+  bottom: -25%;
+}
+
+.flora img {
+  position: absolute;
+  width: 50%;
+}
+
+@media only screen and (max-width: 950px) {
+  header {
+    padding: 50px;
+    padding-top: 10%;
+  }
+
+  .flora--lemon {
+    left: -15%;
+    top: -12%;
+  }
+
+  .flora--flower {
+    right: -10%;
+    bottom: -10%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    padding: 1.2em;
+    padding-top: 10%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  span {
+    font-size: .8em;
+  }
+
+  .flora img {
+    width: 100%;
+  }
+
+  .flora--lemon {
+    display: none;
+  }
+
+  .flora--flower {
+    top: 40%;
+    left: 0;
+  }
 }
